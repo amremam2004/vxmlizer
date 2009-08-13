@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<vxml version="2.0">
+  <form id="MainMenu">
+    <catch event="nomatch">
+      <prompt>Sorry, I did not get that</prompt>
+    </catch>
+    <catch event="noinput">
+      <prompt>I am sorry. but I did not hear anything. Please try again.</prompt>
+    </catch>
+    <catch event="help">
+      <prompt>Please choose one of the options listed</prompt>
+    </catch>
+    <block>
+      <prompt>
+        <audio src="http://web.pdx.edu/~alawini/mill/intro.wav" />
+        This is a test to the vxml file.
+      </prompt>
+    </block>
+    <field name="test">
+      <grammar xml:lang="en-US" root="TOPLEVEL" mode="voice">
+        <rule id="TOPLEVEL" scope="public">
+          <one-of>
+            <item>
+              testing
+              <tag><![CDATA[test "passed"]]></tag>
+            </item>
+            <item>
+              testing one two
+              <tag><![CDATA[test "passed"]]></tag>
+            </item>
+            <item>
+              test
+              <tag><![CDATA[test "passed"]]></tag>
+            </item>
+          </one-of>
+        </rule>
+      </grammar>
+      <prompt>Please say Testing. If the test passed successfully, then you will hear test passed</prompt>
+      <filled>
+        <value expr="test$.interpretation" />
+      </filled>
+    </field>
+  </form>
+</vxml>

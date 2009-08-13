@@ -1,0 +1,20 @@
+Name:            vxmlizer
+Version:         1.0.0
+Homepage:        http://vxmlizer.sourceforge.net
+Synopsis:        A simple VXML library.
+Description:     A simple VXML library.
+License:         BSD3
+License-File:    LICENSE
+Author:          Alawini & Benotman
+Maintainer:      alawini@pdx.edu, benotman@pdx.edu
+Copyright:       (c) 2009 Alawini&Benotman.
+
+Build-type:      Simple
+Cabal-Version:       >=1.2
+Library
+      ghc-options: -frecord-puns
+      extensions:    NamedFieldPuns
+Executable vc
+  Main-is:           VXMLizer.lhs
+  Build-Depends:     base,haskell98, directory, process 
+

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<vxml version="2.0">
+<form>
+    <prompt>
+          <audio src="aladdin_goodbye.wav"/> 
+          Now you will enter your data
+    </prompt>
+    <field name="first_name"> 
+          <prompt>Please say your first name</prompt>	     
+    </field>
+    <field name="department"> 
+         <prompt>
+	 Please enter your department</prompt>	     
+         <grammar xml:lang="en-US" root="TOPLEVEL" mode="voice">
+                <rule id="TOPLEVEL" scope="public">
+                   <one-of lang-list="en-US">
+                     <item>
+                        computer science
+
+                     </item>
+                     <item>
+                        chemistery
+
+                     </item>
+                     <item>
+                         buisness
+
+                     </item>
+                     <item>
+                        physics
+                     </item>
+                     <item>
+                        mathematics
+                     </item>
+                   </one-of>
+                </rule>
+             </grammar>
+    </field>
+    <field  name="student_level">
+	     <prompt>Please say your level</prompt>
+         <grammar xml:lang="en-US" root="TOPLEVEL" mode="voice">
+                <rule id="TOPLEVEL" scope="public">
+                   <one-of lang-list="en-US">
+                     <item>
+                        freshman
+                     </item>
+                     <item>
+                        Sophomore
+                     </item>
+                     <item>
+                         junior
+                     </item>
+                     <item>
+                        senior
+                     </item>
+                     <item>
+                        graduate
+                     </item>
+                   </one-of>
+                </rule>
+             </grammar>
+
+    </field>
+    <filled> 
+    <goto next="menu2.vxml"/>
+    </filled> 
+</form>
+</vxml>
+

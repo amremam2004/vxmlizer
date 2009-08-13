@@ -1,0 +1,23 @@
+digraph tree {
+"[]" [label="menu2_2.vxml"];
+"[]" -> "[1]";
+"[1]" [label="Menu"];
+"[1]" -> "[1,1]";
+"[1,1]" [label="Prompt"];
+"[1,1]" -> "[1,1,1]";
+"[1,1,1]" [label="     Now you are going to reserve an appointment with one of our physicians	 Please choose department     Orthopedic	 Anesthesia	 exit	 "];
+"[1]" -> "[2,1]";
+"[2,1]" [label="Options"];
+"[2,1]" -> "[1,2,1]";
+"[1,2,1]" [label=" Orthopedic "];
+"[1,2,1]" -> "[1,1,2,1]";
+"[1,1,2,1]" [label="menu2.vxml"];
+"[2,1]" -> "[2,2,1]";
+"[2,2,1]" [label=" Anesthesia "];
+"[2,2,1]" -> "[1,2,2,1]";
+"[1,2,2,1]" [label="menu2.vxml"];
+"[2,1]" -> "[3,2,1]";
+"[3,2,1]" [label=" exit "];
+"[3,2,1]" -> "[1,3,2,1]";
+"[1,3,2,1]" [label="menu2.vxml"];
+}

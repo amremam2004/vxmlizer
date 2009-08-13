@@ -1,0 +1,27 @@
+digraph tree {
+"[]" [label="menu2.vxml"];
+"[]" -> "[1]";
+"[1]" [label="Menu"];
+"[1]" -> "[1,1]";
+"[1,1]" [label="Prompt"];
+"[1,1]" -> "[1,1,1]";
+"[1,1,1]" [label="        Welcome to the PSU voice system. What can we do for you today.	registeration, grades, new user, exit	Please say your choice    "];
+"[1]" -> "[2,1]";
+"[2,1]" [label="Options"];
+"[2,1]" -> "[1,2,1]";
+"[1,2,1]" [label=" registeration "];
+"[1,2,1]" -> "[1,1,2,1]";
+"[1,1,2,1]" [label="menu2_1.vxml"];
+"[2,1]" -> "[2,2,1]";
+"[2,2,1]" [label=" grades "];
+"[2,2,1]" -> "[1,2,2,1]";
+"[1,2,2,1]" [label="menu2_2.vxml"];
+"[2,1]" -> "[3,2,1]";
+"[3,2,1]" [label=" new user "];
+"[3,2,1]" -> "[1,3,2,1]";
+"[1,3,2,1]" [label="form1.vxml"];
+"[2,1]" -> "[4,2,1]";
+"[4,2,1]" [label=" exit "];
+"[4,2,1]" -> "[1,4,2,1]";
+"[1,4,2,1]" [label="menu2_5.vxml"];
+}

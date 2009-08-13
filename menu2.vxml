@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<vxml version="2.0">
+<menu>
+     <prompt>
+        Welcome to the PSU voice system. What can we do for you today.
+	registeration, grades, new user, exit
+	Please say your choice
+    </prompt>
+	<choice next="menu2_1.vxml"> registeration </choice>
+	<choice next="menu2_2.vxml"> grades </choice>
+	<choice next="form1.vxml"> new user </choice>
+	<choice next="menu2_5.vxml"> exit </choice>
+</menu>
+</vxml>

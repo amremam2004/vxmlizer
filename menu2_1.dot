@@ -1,0 +1,23 @@
+digraph tree {
+"[]" [label="menu2_1.vxml"];
+"[]" -> "[1]";
+"[1]" [label="Menu"];
+"[1]" -> "[1,1]";
+"[1,1]" [label="Prompt"];
+"[1,1]" -> "[1,1,1]";
+"[1,1,1]" [label="     Hello John, What kind of your information do you want to view or update.	 Personal	 Medical	 exit	 please say your choice    "];
+"[1]" -> "[2,1]";
+"[2,1]" [label="Options"];
+"[2,1]" -> "[1,2,1]";
+"[1,2,1]" [label=" Personal "];
+"[1,2,1]" -> "[1,1,2,1]";
+"[1,1,2,1]" [label="menu2.vxml"];
+"[2,1]" -> "[2,2,1]";
+"[2,2,1]" [label=" Medical "];
+"[2,2,1]" -> "[1,2,2,1]";
+"[1,2,2,1]" [label="menu2.vxml"];
+"[2,1]" -> "[3,2,1]";
+"[3,2,1]" [label=" exit "];
+"[3,2,1]" -> "[1,3,2,1]";
+"[1,3,2,1]" [label="menu2.vxml"];
+}

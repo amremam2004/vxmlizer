@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<vxml version="2.0">
+  <menu>
+    <prompt>
+      <audio src="http://web.pdx.edu/~alawini/mill/intro.wav" />
+      Welcome to the first Haskell generated V X M L file. Please say test to test a generated file. or say real to see a real application
+    </prompt>
+    <choice next="http://web.pdx.edu/~alawini/test.vxml">test</choice>
+    <choice next="http://web.pdx.edu/~alawini/hmsreal.vxml">real</choice>
+  </menu>
+</vxml>

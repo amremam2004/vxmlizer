@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<vxml version="2.0">
+<menu>
+     <prompt>
+     Now you are going to reserve an appointment with one of our physicians
+	 Please choose department
+     Orthopedic
+	 Anesthesia
+	 exit
+	 </prompt>
+    
+	<choice next="menu2.vxml"> Orthopedic </choice>
+	<choice next="menu2.vxml"> Anesthesia </choice>
+	<choice next="menu2.vxml"> exit </choice>
+</menu>
+</vxml>
