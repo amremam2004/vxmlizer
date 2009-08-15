@@ -12,7 +12,7 @@ Copyright:       (c) 2009 Alawini&Benotman.
 Build-type:      Simple
 Cabal-Version:       >=1.2
 Library
-      ghc-options: -frecord-puns
+      ghc-options: -frecord-puns, -XFlexibleInstances, XFlexibleContents 
       extensions:    NamedFieldPuns
 Executable vc
   Main-is:           VXMLizer.lhs
